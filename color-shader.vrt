@@ -1,0 +1,6 @@
+#version 330 // -*- c++ -*-
+in vec4 vertex;
+
+void main(void) {
+	gl_Position = vertex * g3d_ObjectToScreenMatrixTranspose;
+}

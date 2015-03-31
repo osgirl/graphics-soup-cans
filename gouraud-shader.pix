@@ -1,0 +1,18 @@
+#version 330 // -*- c++ -*-
+
+in vec3 wsNormal0;
+
+uniform vec3 diffuseColor;
+
+/** Color of the light source */
+uniform vec3 lightColor;
+
+/** dot product of the surface normal with the light */
+in float gouraudFactor;
+
+out vec4 result;
+
+void main() {
+	result.rgb = diffuseColor * (max(gouraudFactor, 0.0) * lightColor);
+	result.a = 1.0;
+}

@@ -1,0 +1,1 @@
+.ice-tmp/Texturing-Starter/osx-x86_64-clang++5.1/DEBUG/App.o

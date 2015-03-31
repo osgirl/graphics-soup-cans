@@ -1,0 +1,22 @@
+#version 330 // -*- c++ -*-
+
+/** Diffuse/ambient surface color */
+uniform sampler2D textureSampler;
+
+/** Texture coordinate */
+in vec2 texCoord;
+
+in vec3 wsNormal0;
+
+/** Color of the light source */
+uniform vec3 lightColor;
+
+/** dot product of the surface normal with the light */
+in float gouraudFactor;
+
+out vec4 result;
+
+void main() {
+	result.rgb = texture(textureSampler, texCoord).rgb * (max(gouraudFactor, 0.0) * lightColor);
+	result.a = 1.0;
+}
