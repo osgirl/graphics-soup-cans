@@ -1,4 +1,8 @@
-
+/**
+	Comp 394-01 S15 
+	Soup Cans Activity
+	Marcio Porto and Charles Park
+**/
 
 #ifndef App_h
 #define App_h
