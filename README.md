@@ -1,4 +1,4 @@
-# Campbell's Soup Cans
+# Campbell's Soup Cans Activity
 
 COMP 394 - Interactive Graphics - Soup Cans Activity
 
